@@ -25,14 +25,14 @@ app.use(static);
 app.get('', (req, res) => {
 	res.render('index', {
 		title: 'Weather App',
-		name: 'Dave'
+		name: 'Rick'
 	});
 });
 
 app.get('/about', (req, res) => {
 	res.render('about', {
 		title: 'About Me',
-		name: 'David Dully'
+		name: 'Rick'
 	});
 });
 
@@ -40,7 +40,7 @@ app.get('/help', (req, res) => {
 	res.render('help', {
 		message: 'How may I help you?',
 		title: 'Help',
-		name: 'Dave'
+		name: 'Rick'
 	});
 });
 
@@ -86,7 +86,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
 	res.render('404', {
 		title: '404',
-		name: 'Dave',
+		name: 'Rick',
 		errorMsg: 'Help article not found'
 	});
 });
@@ -94,7 +94,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
 	res.render('404', {
 		title: '404',
-		name: 'Dave',
+		name: 'Rick',
 		errorMsg: 'Page Not Found!'
 	});
 });
